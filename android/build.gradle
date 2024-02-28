@@ -29,14 +29,15 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion rootProject.ext.compileSdkVersion  // Use the parent project's compileSdkVersion
- 
+    compileSdkVersion 32
+//    compileSdkVersion rootProject.ext.compileSdkVersion  // Use the parent project's compileSdkVersion
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
     defaultConfig {
-        minSdkVersion rootProject.ext.minSdkVersion  // Use the parent project's minSdkVersion
+        minSdkVersion 20
+//        minSdkVersion rootProject.ext.minSdkVersion  // Use the parent project's minSdkVersion
     }
 }
 

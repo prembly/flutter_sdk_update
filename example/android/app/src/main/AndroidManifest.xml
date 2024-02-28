@@ -6,7 +6,10 @@
 
    <application
         android:label="flutter_identity_kyc_example"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/ic_launcher"
+       android:enableOnBackInvokedCallback="true"
+       >
+
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
